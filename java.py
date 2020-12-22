@@ -20,4 +20,5 @@ print(java)
 print(len(java))
 for j in java:
     f=open("/home/project/"+j,"w")
+    f.write(r.text)
     f.close()
