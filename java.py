@@ -10,7 +10,7 @@ url='https://www.lanqiao.cn/api/v2/labs/'+num+'/document/'
 r=requests.get(url=url,headers=headers)
 # print(r.text)
 text=str(r.text)
-text=re.findall(r"[a-zA-z]*\.java",text)
+text=re.findall(r"[a-zA-z0-9]*\.java",text)
 java=[]
 for t in text:
     t=t.replace("`","")
