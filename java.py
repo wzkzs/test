@@ -17,6 +17,7 @@ for t in text:
     java.append(t)
 java=list(set(java))
 print(java)
+print(len(java))
 for j in java:
     f=open("/home/project/"+j,"w")
     f.close()
